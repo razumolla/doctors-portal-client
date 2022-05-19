@@ -1,17 +1,20 @@
 import React from 'react';
 import chair from '../../assets/images/chair.png';
+import PrimaryButton from '../Shared/PrimaryButton';
 
 
 const Banner = () => {
     return (
 
-        <div class="hero min-h-screen px-12  bg-[url('/src/assets/images/bg.png')]" >
+        <div class="hero min-h-screen  bg-[url('/src/assets/images/bg.png')]" >
             <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src={chair} class="max-w-lg rounded-lg shadow-2xl" />
+                <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt='chair' />
                 <div>
                     <h1 class="text-5xl font-bold">Your New Smile Starts Here!</h1>
-                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to-primary ">Get Started</button>
+                    <p class="py-6">
+                        The Doctor's Portal provides health organizations that strive for excellence and quality care, with a tool that allows physicians to measure themselves against key performance indicators set by the organization. This tool helps optimize physician practices in compliance with the organization's guidelines, offering valuable statistics. Health organizations can easily get creative with this tool by setting targets for practices, and even promoting healthy competition between physicians to increase engagement in providing useful metrics, and overall better quality of service.
+                    </p>
+                    <PrimaryButton>Get Started</PrimaryButton>
                 </div>
             </div>
         </div>
