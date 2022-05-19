@@ -10,10 +10,10 @@ const MakeAppointment = () => {
             <div className='flex-1 hidden lg:block'>
                 <img className='mt-[-120px]' src={doctor} alt="" />
             </div>
-            <div className='flex-1'>
+            <div className='flex-1 px-5'>
                 <h3 className='text-xl text-primary font-bold'>Appointment</h3>
-                <h2 className='text-3xl text-white'>Make an Appointment Today</h2>
-                <p className='text-white'>
+                <h2 className='text-3xl text-white py-5'>Make an Appointment Today</h2>
+                <p className='text-white pb-5'>
                     Both doctor's appointment and doctor appointment are acceptable for describing a medical visit. In the first case the 's, instead of showing possession, is actually showing association; appointments of this nature are associated with doctors. In the latter case, the noun doctor is being used adjectivally to describe the type of appointment.
                 </p>
                 <PrimaryButton>Get Started</PrimaryButton>
