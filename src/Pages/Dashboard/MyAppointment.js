@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyAppointment = () => {
-    const [user] = useAuthState(auth);
     const [appointments, setAppointments] = useState([]);
+    const [user] = useAuthState(auth);
     const navigate = useNavigate()
 
     useEffect(() => {
