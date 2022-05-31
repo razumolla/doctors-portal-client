@@ -11,7 +11,7 @@ const Dashboard = () => {
         <div className="drawer drawer-mobile">
             <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-                <h2 className='text-2xl font-bold text-purple-500'>welcome to your Dashboard</h2>
+                <h2 className='text-2xl font-bold text-purple-500 m-3'>welcome to your Dashboard</h2>
                 <Outlet />
             </div>
 
@@ -22,7 +22,13 @@ const Dashboard = () => {
                     <li><Link to="/dashboard">My Appointment</Link></li>
                     <li><Link to="/dashboard/review">My Reviews</Link></li>
                     <li><Link to="/dashboard/history">My History</Link></li>
-                    <li><Link to="/dashboard/users">All Users</Link></li>
+                    {
+                        admin && <>
+                            <li><Link to="/dashboard/users">All Users</Link></li>
+                            <li><Link to="/dashboard/addDoctor">Add a Doctor</Link></li>
+                        </>
+                    }
+
                 </ul>
 
             </div>
