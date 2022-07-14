@@ -68,7 +68,6 @@ const AddDoctor = () => {
                             console.log('doctor', inserted);
                         })
 
-
                 }
             })
     };
